@@ -6,11 +6,16 @@
     <RazorCompileOnPublish>false</RazorCompileOnPublish>
   </PropertyGroup>
 
+  <Target Name="Bundle" BeforeTargets="BeforePublish">
+    <Exec Command="tsc wwwroot/assets/js/dtos.ts" />
+  </Target>
+
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" />
     <PackageReference Include="ServiceStack" Version="5.*" />
     <PackageReference Include="ServiceStack.Mvc" Version="5.*" />
 
