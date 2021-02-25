@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
     <!-- Disabling pre-compilation is required for advanced features like: https://docs.servicestack.net/netcore-razor#page-based-routing-in-razor  -->
-    <RazorCompileOnPublish>false</RazorCompileOnPublish>
+    <RazorCompileOnPublish>true</RazorCompileOnPublish>
   </PropertyGroup>
 
   <Target Name="Bundle" BeforeTargets="BeforePublish">
