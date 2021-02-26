@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-        
+          
       - name: repository name fix
         run: echo "image_repository_name=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       
