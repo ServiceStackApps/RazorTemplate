@@ -6,10 +6,6 @@
     <RazorCompileOnPublish>false</RazorCompileOnPublish>
   </PropertyGroup>
 
-  <Target Name="Bundle" BeforeTargets="BeforePublish">
-    <Exec Command="tsc wwwroot/assets/js/dtos.ts" />
-  </Target>
-
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
