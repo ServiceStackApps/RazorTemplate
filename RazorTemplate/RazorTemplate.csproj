@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
     <!-- Disabling pre-compilation is required for advanced features like: https://docs.servicestack.net/netcore-razor#page-based-routing-in-razor  -->
-    <RazorCompileOnPublish>true</RazorCompileOnPublish>
+    <RazorCompileOnPublish>false</RazorCompileOnPublish>
   </PropertyGroup>
 
   <Target Name="Bundle" BeforeTargets="BeforePublish">
@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" />
     <PackageReference Include="ServiceStack" Version="5.*" />
     <PackageReference Include="ServiceStack.Mvc" Version="5.*" />
 
