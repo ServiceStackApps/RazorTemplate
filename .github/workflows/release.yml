@@ -12,6 +12,7 @@ jobs:
       - name: dotnet publish
         run: |
           rm -rf publish
+          cd publish && ls -l && cd ..
           dotnet publish ./RazorTemplate/ -o publish -c release -r linux-x64
           
       - name: repository name fix
