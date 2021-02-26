@@ -12,8 +12,8 @@ jobs:
       - name: dotnet publish
         run: |
           rm -rf publish
-          cd publish && ls -l && cd ..
           dotnet publish ./RazorTemplate/ -o publish -c release -r linux-x64
+          cd publish && ls -l && cd ..
           
       - name: repository name fix
         run: echo "image_repository_name=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
